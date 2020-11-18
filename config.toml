@@ -1,0 +1,4 @@
+baseURL = "https://george-tmz.github.io/"
+languageCode = "zh-Hans"
+title = "杂货铺"
+theme = "ananke"
