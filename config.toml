@@ -14,6 +14,30 @@ theme = "LoveIt"
 [params]
   # LoveIt 主题版本
   version = "0.2.X"
+  # 网站描述
+  description = "XXX的个人博客"
+
+  # 主页配置
+  [params.home]
+    # LoveIt 新增 | 0.2.0 RSS 文章数目
+    rss = 10
+    # 主页个人信息
+    [params.home.profile]
+      enable = true
+      # Gravatar 邮箱，用于优先在主页显示的头像
+      gravatarEmail = "jobsteng@163.com"
+      # 主页显示头像的 URL
+      avatarURL = "/assets/images/logo.png"
+      # LoveIt 更改 | 0.2.7 主页显示的网站标题 (支持 HTML 格式)
+      title = ""
+      # 主页显示的网站副标题
+      subtitle = "WHO AM I"
+      # 是否为副标题显示打字机动画
+      typeit = true
+      # 是否显示社交账号
+      social = true
+      # LoveIt 新增 | 0.2.0 免责声明 (支持 HTML 格式)
+      disclaimer = ""
 
   # 页面底部信息配置
   [params.footer]
@@ -33,6 +57,8 @@ theme = "LoveIt"
     # 许可协议信息 (支持 HTML 格式)
     #license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 
+  [params.social]
+    Email = "jobsteng@163.com"
 
 [menu]
   [[menu.main]]
@@ -62,6 +88,14 @@ theme = "LoveIt"
     url = "/categories/"
     title = ""
     weight = 3
+  [[menu.main]]
+    identifier = ""
+    pre = ""
+    post = ""
+    name = "关于我"
+    url = "/about/"
+    title = ""
+    weight = 4
 
 # Hugo 解析文档的配置
 [markup]
@@ -69,3 +103,9 @@ theme = "LoveIt"
   [markup.highlight]
     # false 是必要的设置 (https://github.com/dillonzq/LoveIt/issues/158)
     noClasses = false
+
+# 作者配置
+[author]
+  name = "XXX"
+  email = "jobsteng@163.com"
+  link = "https://www.wbomb.cn/"
